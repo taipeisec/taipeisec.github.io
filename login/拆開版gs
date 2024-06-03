@@ -1,0 +1,47 @@
+function loginUser(email, password) {
+  // 模擬登入檢查，可以替換為實際的驗證邏輯
+  var user = getUserByEmail(email);
+  if (user && user.password === password) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function registerUser(email, password) {
+  // 檢查用戶是否已存在
+  if (getUserByEmail(email)) {
+    return 'exists';
+  }
+  
+  // 模擬用戶註冊，可以替換為實際的註冊邏輯
+  createUser(email, password);
+  return 'success';
+}
+
+function resetPassword(email) {
+  // 模擬密碼重置，可以替換為實際的密碼重置邏輯
+  var user = getUserByEmail(email);
+  if (user) {
+    // 重置密碼邏輯
+    return 'success';
+  } else {
+    return 'notfound';
+  }
+}
+
+function getUserByEmail(email) {
+  // 模擬查找用戶，可以替換為實際的用戶查找邏輯
+  var users = [
+    {email: 'test@example.com', password: '123456'}
+  ];
+  return users.find(function(user) {
+    return user.email === email;
+  });
+}
+
+function createUser(email, password) {
+  // 模擬創建用戶，可以替換為實際的用戶創建邏輯
+  var newUser = {email: email, password: password};
+  // 儲存用戶邏輯
+}

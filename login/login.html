@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>登入/註冊</title>
+</head>
+
+<body>
+    <header class="header bg-dark fg-white p-2">
+        <h1>登入/註冊</h1>
+        <a href="index.html" class="header-index-btn fg-white">回主頁</a>
+    </header>
+    <div class="login-container">
+        <div class="login-form" id="loginForm">
+            <h1>登入</h1>
+            <form>
+                <div class="form-group">
+                    <input type="email" placeholder="電子郵件" data-role="input">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="密碼" data-role="input">
+                </div>
+                <button type="submit" class="button bg-dark fg-white">登入</button>
+                <a href="#" id="showForgot">忘記密碼？</a>
+            </form>
+            <p>還沒有帳號？ <a href="#" id="showSignup">註冊</a></p>
+        </div>
+        <div class="signup-form d-none" id="signupForm">
+            <h1>建立帳戶</h1>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="姓名" data-role="input">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="電子郵件" data-role="input">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="密碼" data-role="input">
+                </div>
+                <button type="submit" class="button bg-dark fg-white">註冊</button>
+            </form>
+            <p>已經有帳戶？ <a href="#" id="showLogin">登入</a></p>
+        </div>
+        <div class="forgot-form d-none" id="forgotForm">
+            <h1>忘記密碼</h1>
+            <form>
+                <div class="form-group">
+                    <input type="email" placeholder="電子郵件" data-role="input">
+                </div>
+                <button type="submit" class="button bg-dark fg-white">寄送重設密碼信</button>
+            </form>
+            <p>已經有帳戶？ <a href="login.html" id="showLogin">登入</a></p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+    <script>
+        // 利用jQuery和Metro UI CSS的事件来处理显示和隐藏
+        $(document).ready(function() {
+            $('#showSignup').click(function() {
+                $('#loginForm').addClass('d-none');
+                $('#signupForm').removeClass('d-none');
+                $('#forgotForm').addClass('d-none');
+            });
+
+            $('#showLogin').click(function() {
+                $('#loginForm').removeClass('d-none');
+                $('#signupForm').addClass('d-none');
+                $('#forgotForm').addClass('d-none');
+            });
+
+            $('#showForgot').click(function() {
+                $('#loginForm').addClass('d-none');
+                $('#signupForm').addClass('d-none');
+                $('#forgotForm').removeClass('d-none');
+            });
+        });
+    </script>
+</body>
+
+</html>
