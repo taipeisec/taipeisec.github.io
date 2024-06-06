@@ -29,7 +29,7 @@
             background-size: cover;
             background-position: center;
         }
-        a {color: yellow;}
+        a {color: rgb(150, 200, 255);}
         p {color: white;}
         a:hover {color: white;}
         
@@ -79,7 +79,7 @@
     <div class="container">
         <div class="grid">
             <div class="row" >
-                <div class="cell-md-6 cell-offset-md-3" style="backdrop-filter: blur(50px);">
+                <div class="cell-md-6 offset-md-3" style="backdrop-filter: blur(50px);">
                     <div class="card bg-transparent" id="loginForm">
                         <div class="card-content p-6">
                             <h1>登入</h1>
@@ -91,8 +91,9 @@
                                     <input type="password" placeholder="密碼" data-role="input">
                                 </div>
                                 <P><button type="submit" class="button primary">登入</button></P>
-                                <P><a href="#" id="showForgot">忘記密碼？</a></P>
+                                
                             </form>
+                            <P>忘記密碼？ <a href="#" id="showForgot">重設</a></P>
                             <p>還沒有帳號？ <a href="#" id="showSignup">註冊</a></p>
                         </div>
                     </div>
@@ -116,7 +117,7 @@
                     </div>
                     <div class="card bg-transparent d-none" id="forgotForm">
                         <div class="card-content p-6">
-                            <h1>忘記密碼</h1>
+                            <h1>重設密碼</h1>
                             <form>
                                 <div class="form-group">
                                     <input type="email" placeholder="電子郵件" data-role="input">
