@@ -1,0 +1,54 @@
+        body, input, select, button { font-family: 'LXGW WenKai TC'; font-size: 16pt}
+        body {background-color: #E3E8EB;}
+        h1 { font-size: 2.4rem }
+        .container { width: 90%; max-width: 1200px; margin: 0 auto;}
+        .box { border: 1px solid black; text-align: center; padding: 20px;}
+        .headerbutton { display: flex; justify-content: flex-end; padding-top: 5px;}
+        .app-bar { background-color: #A3D5DC; color: #555; padding: 10px; display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        .form-row { display: flex; margin-bottom: 10px;}
+        .form-row > div { margin-right: 10px; justify-content: space-around; align-items: center;}
+        .form-row-1 > div:first-child { width: 100%; }
+        .form-row-2 > div:first-child { width: 18%; }
+        .form-row-2 > div:nth-child(2) { width: 82%; }
+        .form-row-3 > div:first-child { width: 18%;  }
+        .form-row-3 > div:nth-child(2) { width: 30%; }
+        .form-row-3 > div:nth-child(3) { width: 52%; }
+        .form-row-2a > div:first-child { width: 24%; }
+        .form-row-2a > div:nth-child(2) { width: 76%; }
+        .form-row-3a > div:first-child { width: 24%;  }
+        .form-row-3a > div:nth-child(2) { width: 26%; }
+        .form-row-3a > div:nth-child(3) { width: 50%; }
+        .form-row-4 > div:first-child { width: 18%; }
+        .form-row-4 > div:nth-child(2) { width: 32%; }
+        .form-row-4 > div:nth-child(3) { width: 18%; }
+        .form-row-4 > div:nth-child(4) { width: 32%; }
+        .form-row-5 > div:first-child { width: 18%; }
+        .form-row-5 > div:nth-child(2) { width: 12%; }
+        .form-row-5 > div:nth-child(3) { width: 29%; }
+        .form-row-5 > div:nth-child(4) { width: 12%; }
+        .form-row-5 > div:nth-child(5) { width: 29%; }
+        .form-row-6 > div:first-child { width: 18%; }
+        .form-row-6 > div:nth-child(2) { width: 16%; }
+        .form-row-6 > div:nth-child(3) { width: 16%; }
+        .form-row-6 > div:nth-child(4) { width: 16%; }
+        .form-row-6 > div:nth-child(5) { width: 16%; }
+        .form-row-6 > div:nth-child(6) { width: 16%; }
+        .highlight {font-weight: bold; color: royalblue  }
+        .hidden { display: none; }
+        .form-row {margin-bottom: 10px;}
+        .form-row .button { margin-right: 10px; }
+        .form-row input { display: flex; justify-content: center; align-items: center;  text-align: center; }
+        .input-text {align-items: center;  text-align: center;}
+        .center-text{ display: flex; justify-content: center; align-items: center;  text-align: center; }
+        .right-text{ display: flex; justify-content: flex-end; align-items: center;  text-align: right; width: 100%; }
+        .result-message {color: red; font-weight: bold;}
+        .progress-container {margin-top: 0px;}
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+            z-index: 1; /* sits below the modal but above the rest of the content */
+            display: none; /* initially hidden */ }
+        .modal { position: fixed; top: 150px; left: 50%; transform: translateX(-50%); width: 80%;
+            max-width: 400px; background-color: rgba(0, 0, 0, 0); display: flex;
+            justify-content: center; align-items: center; z-index: 2; }
+        .modal-content { background-color: rgba(235, 235, 235, 235); padding: 20px;
+            border-radius: 5px; width: 300px; }
